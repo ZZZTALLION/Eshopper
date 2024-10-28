@@ -1,1 +1,1 @@
-Esta carpeta contiene los archivos de Java Script.
+Esta carpeta contiene los archivos de JavaScript.
