@@ -202,8 +202,9 @@
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>$50</h2>
-												<p>Producto 1</p>
+												<h2><?php echo "$" . $BDProductos[2][$i]; ?>
+											</h2>
+											<p><?php echo "$" . $BDProductos[1][$i];?></p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</a>
 											</div>
 										</div>
