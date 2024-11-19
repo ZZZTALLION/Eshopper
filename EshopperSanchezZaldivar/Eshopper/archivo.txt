@@ -6,3 +6,4 @@
 6,Gabardina,500,UNISEX
 7,Guantes,250,UNISEX
 9, T-800 Peluche,300,EXTRAS
+10, Álbum Herzeleid RAMMSTEIN,1500,EXTRAS
