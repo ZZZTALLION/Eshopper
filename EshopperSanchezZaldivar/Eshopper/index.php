@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
-
+session_start();
+$usuario = $_SESSION["usuario"];
+$email = $_SESSION["email"];
 //Gracias a estas líneas de código, podemos agregar productos de forma dinámica
   $BDProductos = array(0,"CERO",0,"");
  $i=0; $iProductos=1; 
@@ -62,7 +64,10 @@
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
 								<li><a href="#"><i class="fa fa-phone"></i> +52 618 460 6969</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> atencionclientes@gmail.com</a></li> <!--En las dos líneas anteriores puedes agregar datos personales-->
+								<font color="green">
+<li> Usuario: <?php echo $usuario; ?></li>
+<li> Correo <i class="fa fa-envelope"></i>:<?php echo $email; ?></li>
+</font>
 							</ul>
 						</div>
 					</div>

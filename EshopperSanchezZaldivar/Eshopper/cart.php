@@ -138,6 +138,7 @@
 					<tbody>
 
 						<?php 
+						$total=0;
   if(file_exists('carritocompras.txt')){
     $content = trim(file_get_contents('carritocompras.txt'), PHP_EOL);
     $lineas = explode(PHP_EOL, $content);
@@ -195,7 +196,7 @@
 							<li>Total <span><?php echo "$" . $total + ($total * .16); ?></span></li>
 						</ul>
 							<a class="btn btn-default update" href="">Actualizar</a>
-							<a class="btn btn-default check_out" href="">Vaciar carrito</a>
+							<a class="btn btn-default check_out" href="vaciarcarrito.php" target="_blank">Vaciar Carrito</a>
 					</div>
 				</div>
 			</div>
