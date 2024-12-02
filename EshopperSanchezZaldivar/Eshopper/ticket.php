@@ -35,7 +35,9 @@ if(file_exists('../carritocompras.txt')){
          $total = $total + $precioE;
       }
       $pdf->Ln(99);
-$pdf->Cell(160,25,"$ " . $total, 0,1, 'R');
+      //"$" . $total + ($total * .16);
+      //"$ " . $total
+$pdf->Cell(160,25,"$" . $total + ($total * .16), 0,1, 'R');
 //Aqui se borra el Carrito de Compras
 if(file_exists('../carritocompras.txt')) unlink("../carritocompras.txt");
 $pdf->Output();
